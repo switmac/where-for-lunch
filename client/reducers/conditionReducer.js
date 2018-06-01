@@ -1,9 +1,8 @@
-import { handleActions, createActions } from 'redux-actions';
-import * as conditionActionTypes from '../actions/conditionActionTypes';
+import { handleActions } from 'redux-actions';
+import * as actionTypes from '../actions/conditionActionTypes';
 
-const actionTypes = createActions({}, ...Object.values(conditionActionTypes));
 const initialState = {
-  distance: 1,
+  distance: 1000,
 };
 const conditionReducer = handleActions(
   {

@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import condition from './conditionReducer';
+import { routerReducer } from 'react-router-redux';
+import conditionReducer from './conditionReducer';
+import placeReducer from './placeReducer';
 
 export default combineReducers({
-  condition,
+  condition: conditionReducer,
+  place: placeReducer,
+  routing: routerReducer,
 });

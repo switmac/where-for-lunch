@@ -5,7 +5,9 @@ const rootPath = path.join(__dirname, '../client');
 module.exports = {
   context: rootPath,
   mode: 'development',
-  entry: './index.js',
+  entry: {
+    js: ['babel-polyfill', './index.js'],
+  },
   devtool: 'cheap-module-source-map',
 
   output: {
@@ -28,12 +30,12 @@ module.exports = {
     rules: [
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        use: ['file-loader'],
       },
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loaders: ["babel-loader"]
+        loaders: ['babel-loader'],
       },
       {
         test: /\.js?$/,
@@ -57,6 +59,6 @@ module.exports = {
           },
         ],
       },
-    ]
+    ],
   },
-}
+};
