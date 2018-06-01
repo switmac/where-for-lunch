@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import placeActions from '../actions/placeActions';
 import Place from '../components/Place/Place';
+import Button from '../components/Button/Button';
 
 class HomePage extends Component {
   handleOnClick = () => {
@@ -11,14 +12,13 @@ class HomePage extends Component {
   }
   render() {
     const { condition, place } = this.props;
-    console.log('??? ', condition);
     return (
-      <div>
+      <div className="homePageWrapper">
         <div>
-          <span>{condition.distance}</span>
-        </div>
-        <div>
-          <span onClick={this.handleOnClick}>click</span>
+          <div>radius: {condition.distance}</div>
+          <Button onClick={this.handleOnClick} theme="homepage">
+            Click
+          </Button>
         </div>
         <Place place={place} />
       </div>

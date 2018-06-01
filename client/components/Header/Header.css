@@ -1,3 +1,13 @@
+@import '../../styles/variables.css';
+
 .root {
-  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: calc($base-spacing * 1.5);
+  }
 }

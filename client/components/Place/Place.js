@@ -4,10 +4,10 @@ import styles from './Place.css';
 
 const Place = ({ place }) => (
   <div className={styles.root}>
-    <div>{ place.name }</div>
-    <div>{ place.address }</div>
-    <div>{ place.phone }</div>
-    <div>{ place.rating }</div>
+    <div>name: { place.name }</div>
+    <div>address: { place.address }</div>
+    <div>phone: { place.phone }</div>
+    <div>rating: { place.rating }</div>
   </div>
 );
 

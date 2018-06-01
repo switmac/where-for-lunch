@@ -1,6 +1,6 @@
 export function toSearchPlacesParams(params) {
   const result = {
-    location: '-33.964833,151.095163',
+    location: params.latLng,
     radius: params.distance,
     type: 'restaurant',
     key: params.cruisine,

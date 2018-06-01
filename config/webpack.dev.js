@@ -1,5 +1,7 @@
-var path = require('path');
-const webpack = require('webpack');
+const path = require('path');
+const postcssVariables = require('postcss-advanced-variables');
+const postcssNested = require('postcss-nested');
+
 const rootPath = path.join(__dirname, '../client');
 
 module.exports = {
@@ -55,6 +57,15 @@ module.exports = {
               importLoaders: 1,
               localIdentName: '[name]__[local]',
               minimize: { safe: true },
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                postcssVariables,
+                postcssNested,
+              ],
             },
           },
         ],

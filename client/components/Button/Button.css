@@ -1,0 +1,16 @@
+@import '../../styles/variables.css';
+
+.root {
+  &.homepage {
+    background: $green;
+    color: white;
+    border: none;
+    position: relative;
+    height: 4rem;
+    font-size: 1.6em;
+    padding: 0 calc($base-spacing * 2);
+    cursor: pointer;
+    transition:800ms ease all;
+    margin-top: $base-spacing;
+  }
+}

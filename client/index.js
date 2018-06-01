@@ -10,6 +10,8 @@ import rootReducer from './reducers';
 import sagas from './sagas';
 import App from './containers/App';
 import HomePage from './containers/HomePage';
+import { fetchLatLng } from './lib/navigatorHelper';
+import './index.css';
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -19,6 +21,8 @@ const store = createStore(
 );
 
 sagaMiddleware.run(sagas);
+
+fetchLatLng(store);
 
 const history = createHistory();
 render(

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header/Header';
 
 const App = ({ children }) => (
-  <div>
+  <div className="mainWrapper">
     <Header />
     {children}
   </div>

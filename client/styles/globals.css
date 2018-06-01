@@ -1,0 +1,26 @@
+@import './variables.css';
+
+:global(.mainWrapper) {
+  max-width: $tablet-portrait;
+  padding: 0 $base-spacing;
+  margin: 0 auto;
+
+  @media ( min-width: calc($tablet-portrait - ($base-spacing * 3)) ) {
+    padding: 0 calc($base-spacing * 1.5);
+  }
+}
+
+:global(.homePageWrapper) {
+  display: flex;
+  justify-content: space-around;
+  flex: 50%;
+  min-height: 45rem;
+  align-items: center;
+}
+
+body {
+  background: url("/assets/index.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: $body-font;
+  color: white;
+}

@@ -7,7 +7,6 @@ const GOOGLE_API_URL = 'https://maps.googleapis.com/maps/api/place';
 
 export function searchPlaces(params) {
   params.key = process.env.GOOGLE_PLACE_API_KEY;
-  console.log('oh ehhehe params ', params);
   return axios.get(`${GOOGLE_API_URL}/nearbysearch/json`, {
     params,
   }).then(({ data }) => Promise.resolve(data.results))
