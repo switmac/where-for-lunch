@@ -5,8 +5,8 @@ import { bindActionCreators } from 'redux';
 import placeActions from '../actions/placeActions';
 import conditionActions from '../actions/conditionActions';
 import Place from '../components/Place/Place';
-import Button from '../components/Button/Button';
 import Condition from '../components/Condition/Condition';
+import foodSVG from '../assets/spaguetti.svg';
 
 class HomePage extends Component {
   handleOnClick = () => {
@@ -21,12 +21,13 @@ class HomePage extends Component {
     return (
       <div className="homePageWrapper">
         <div>
-          <Condition condition={condition} action={this.handleOnConditionChange}/>
-          <Button onClick={this.handleOnClick} theme="homepage">
-            Click
-          </Button>
+          <Place place={place} />
+          <div>
+            <Condition condition={condition} action={this.handleOnConditionChange}/>
+            <img onClick={this.handleOnClick} src={foodSVG} className="foodSVG" />
+          </div>
         </div>
-        <Place place={place} />
+
       </div>
     );
   }

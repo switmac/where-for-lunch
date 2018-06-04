@@ -1,3 +1,47 @@
-.root {
+@import '../../styles/variables.css';
 
+.name {
+  margin-top: calc($base-spacing * 10);
+  min-height: 2rem;
+  font-size: 2rem;
+  margin-bottom: calc($base-spacing * 2);
+}
+.box {
+  min-height: 10rem;
+  background-color: white;
+  color: $black;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  border-radius: 1rem;
+  padding: calc($base-spacing * 2);
+  > div {
+    margin-bottom: calc($base-spacing / 2);
+  }
+  .rating {
+    margin-top: $base-spacing;
+    position: realtive;
+    display: inline;
+  }
+  .ratingScore, .stars {
+    display: inline;
+  }
+  .stars {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: $starGrey;
+    overflow: hidden;
+    margin-left: calc($base-spacing / 2);
+  }
+  .fullStars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: $starYellow;
+  }
+  .emptyStars:before, .fullStars:before {
+    content:'\2605\2605\2605\2605\2605';
+    font-size: 1rem;
+  }
 }

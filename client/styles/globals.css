@@ -11,11 +11,7 @@
 }
 
 :global(.homePageWrapper) {
-  display: flex;
-  justify-content: space-around;
-  flex: 50%;
   min-height: 45rem;
-  align-items: center;
 }
 
 body {
