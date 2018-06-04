@@ -3,19 +3,25 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import placeActions from '../actions/placeActions';
+import conditionActions from '../actions/conditionActions';
 import Place from '../components/Place/Place';
 import Button from '../components/Button/Button';
+import Condition from '../components/Condition/Condition';
 
 class HomePage extends Component {
   handleOnClick = () => {
     this.props.fetchPlaces(this.props.condition);
+  }
+
+  handleOnConditionChange = (value) => {
+    this.props.setRadius(value);
   }
   render() {
     const { condition, place } = this.props;
     return (
       <div className="homePageWrapper">
         <div>
-          <div>radius: {condition.distance}</div>
+          <Condition condition={condition} action={this.handleOnConditionChange}/>
           <Button onClick={this.handleOnClick} theme="homepage">
             Click
           </Button>
@@ -34,12 +40,14 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators({
     fetchPlaces: placeActions.fetchPlaces,
+    setRadius: conditionActions.setRadius,
   }, dispatch);
 
 HomePage.propTypes = {
   condition: PropTypes.object,
   place: PropTypes.object,
   fetchPlaces: PropTypes.func,
+  setRadius: PropTypes.func,
 };
 export default connect(
   mapStateToProps,

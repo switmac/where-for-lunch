@@ -1,5 +1,5 @@
 import { call, takeEvery, put } from 'redux-saga/effects';
-import { getPlaceIds, getPlaceDetails } from '../services/placeApi';
+import { getPlaceIds } from '../services/placeApi';
 import {
   FETCH_PLACES,
 } from '../actions/placeActionTypes';
@@ -10,14 +10,12 @@ import { getRandom } from '../lib/utils';
 
 function* fetchPlace(action) {
   try {
-    const placeIds = yield call(getPlaceIds, action.payload);
-    console.log('oh hehehe ', placeIds);
-    const randomPlaceId = getRandom(placeIds);
-    console.log('?????? ', randomPlaceId);
-    const placeDetails = yield call(getPlaceDetails, randomPlaceId);
-    yield put(placeActions.setDetails(placeDetails));
+    const places = yield call(getPlaceIds, action.payload);
+    const randomPlace = getRandom(places);
+    // const placeDetails = yield call(getPlaceDetails, randomPlace);
+    yield put(placeActions.setDetails(randomPlace));
   } catch (e) {
-    console.log('eeeeee ', e);
+    console.log('error! ', e);
   }
 }
 

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { searchPlaces, getPlaceDetails } from '../services/googlePlaces';
+import { searchPlaces, getPlaceDetails } from '../services/yelp';
 import {
   toSearchPlacesParams,
   fromSearchPlacesParams,
