@@ -12,6 +12,13 @@
 
 :global(.homePageWrapper) {
   min-height: 45rem;
+
+}
+
+:global(.searchWrapper) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 body {

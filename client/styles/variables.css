@@ -5,7 +5,14 @@ $tablet-portrait:         48rem;
 $tablet-landscape:        64rem;
 $desktop:                 80rem;
 $big-desktop:             90rem;
-$green:                   #1AAB8A;
+$green:                   #32b699;
 $black:                   #0C090A;
 $starYellow:              #fde16d;
 $starGrey:                #b1b1b1;
+
+$button-shadow-x:         0;
+$button-shadow-y:         0.03125em;
+$button-shadow-blur:      0.0625em;
+$button-shadow-spread:    0;
+$button-shadow-color:     rgba(0, 0, 0, 0.1);
+$button-shadow:           $button-shadow-x $button-shadow-y $button-shadow-blur $button-shadow-spread $button-shadow-color;

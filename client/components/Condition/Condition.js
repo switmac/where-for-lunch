@@ -9,28 +9,17 @@ export default class Condition extends PureComponent {
     action: PropTypes.func,
   };
 
-  constructor() {
-    super();
-    this.state = { isEdit: false };
-  }
-
   handleOnBlurAction = (e) => {
-    this.setState({ isEdit: false });
     this.props.action(e.target.value);
-  }
-  open = () => {
-    this.setState({ isEdit: true });
   }
 
   render() {
     const { condition: { radius } } = this.props;
-    const { isEdit } = this.state;
     return (
       <div className={styles.root}>
-        { isEdit ?
-          <Input defaultValue={radius} onBlurAction={this.handleOnBlurAction}></Input> :
-          <div>radius: { radius } <span onClick={this.open}>Edit</span></div>
-        }
+        <span>radius:</span>
+        <Input defaultValue={radius} onBlurAction={this.handleOnBlurAction}></Input>
+        <span>meters</span>
       </div>
     );
   }

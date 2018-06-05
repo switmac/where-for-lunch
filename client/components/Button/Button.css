@@ -1,16 +1,16 @@
 @import '../../styles/variables.css';
 
 .root {
-  &.homepage {
-    background: $green;
-    color: white;
-    border: none;
-    position: relative;
-    height: 4rem;
+  &.homepageClick {
     font-size: 1.6em;
     padding: 0 calc($base-spacing * 2);
     cursor: pointer;
-    transition:800ms ease all;
-    margin-top: $base-spacing;
+    background: url('/assets/spaguetti.svg') no-repeat center center;
+    background-color: $green;
+    height: 4rem;
+    border-radius: 4rem;
+    background-size: 60%;
+    margin-left: calc($base-spacing * 2);
+    box-shadow: $button-shadow;
   }
 }
