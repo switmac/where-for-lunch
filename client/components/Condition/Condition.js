@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import Input from 'components/Input/Input';
 import styles from './Condition.css';
-import Input from '../Input/Input.js';
 
 export default class Condition extends PureComponent {
   static propTypes = {

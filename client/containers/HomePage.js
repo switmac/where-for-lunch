@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import placeActions from '../actions/placeActions';
-import conditionActions from '../actions/conditionActions';
-import Place from '../components/Place/Place';
-import Condition from '../components/Condition/Condition';
-import Button from '../components/Button/Button';
+import Button from 'components/Button/Button';
+import placeActions from 'actions/placeActions';
+import conditionActions from 'actions/conditionActions';
+import Place from 'components/Place/Place';
+import Condition from 'components/Condition/Condition';
 
 class HomePage extends Component {
   handleOnClick = () => {

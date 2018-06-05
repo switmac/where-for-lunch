@@ -956,7 +956,8 @@ module.exports = {
   "node": true,
   "es6": true,
   "browser": true,
-  "mocha": true
+  "mocha": true,
+  "jest": true,
  },
  "parserOptions": {
   "ecmaVersion": 2017,
@@ -994,5 +995,5 @@ module.exports = {
   "eslint:recommended",
   "plugin:react/recommended"
  ],
- "parser": "babel-eslint"
+ "parser": "babel-eslint",
 }

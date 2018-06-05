@@ -1,4 +1,4 @@
-@import './variables.css';
+@import 'variables.css';
 
 :global(.mainWrapper) {
   max-width: $tablet-portrait;
@@ -22,7 +22,7 @@
 }
 
 body {
-  background: url("/assets/index.jpg") no-repeat center center fixed;
+  background: url("assets/index.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: $body-font;
   color: white;

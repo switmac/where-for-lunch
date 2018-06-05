@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import * as actionTypes from '../actions/conditionActionTypes';
+import * as actionTypes from 'actions/conditionActionTypes';
 
 const initialState = {
   radius: 500,

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Place component renders rating section when present 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="name"
+  />
+  <div
+    className="box"
+  >
+    <div />
+    <div />
+    <div />
+    <div
+      className="rating"
+    >
+      <div
+        className="ratingScore"
+      >
+        3.5
+      </div>
+      <div
+        className="stars"
+      >
+        <div
+          className="emptyStars"
+        />
+        <div
+          className="fullStars"
+          style={
+            Object {
+              "width": "70%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`With Jest snapshot, Place component renders rating section when present 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="name"
+  />
+  <div
+    className="box"
+  >
+    <div />
+    <div />
+    <div />
+    <div
+      className="rating"
+    >
+      <div
+        className="ratingScore"
+      >
+        3.5
+      </div>
+      <div
+        className="stars"
+      >
+        <div
+          className="emptyStars"
+        />
+        <div
+          className="fullStars"
+          style={
+            Object {
+              "width": "70%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

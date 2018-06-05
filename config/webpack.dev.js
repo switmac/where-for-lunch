@@ -1,6 +1,4 @@
 const path = require('path');
-const postcssVariables = require('postcss-advanced-variables');
-const postcssNested = require('postcss-nested');
 
 const rootPath = path.join(__dirname, '../client');
 
@@ -11,7 +9,10 @@ module.exports = {
     js: ['babel-polyfill', './index.js'],
   },
   devtool: 'cheap-module-source-map',
-
+  resolve: {
+    extensions: ['.js'],
+    modules: [rootPath, 'node_modules'],
+  },
   output: {
     path: path.join(__dirname, '../client'),
     publicPath: '/',
@@ -62,10 +63,9 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [
-                postcssVariables,
-                postcssNested,
-              ],
+              config: {
+                path: path.resolve(__dirname, './postcss.config.js'),
+              },
             },
           },
         ],
