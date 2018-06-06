@@ -30,7 +30,7 @@ But keep in mind that your code should try to be clean, dry, scalable, readable,
 When you first time access this app, it should prompt you a location permission, click on yes, then wait for a few seconds (for navigator to grab your lat long), you can click on the green button to randomly generate you a food place based on the a certain radius around you.
 ![on load](https://docs.google.com/uc?id=12ttwOeZRDUwD7vk7FiMk_OQE0U0X00gb)
 
-![on button blick](https://docs.google.com/uc?id=1RATKEANgIe_yOhng-Rn4p_vKIW7nUJdg)
+![on button blick](https://docs.google.com/uc?id=1XgFa_Yu07Ca-V7Erv_BMajkRqHq09EHu)
 
 --------------------
 
