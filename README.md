@@ -36,6 +36,11 @@ $ npm run dev
 ```sh
 $ npm test
 ```
+#### Local development:
+http://localhost:3000/#/ 
+
+For server side, this repo uses 3001 as the default port number, if you want to change to a port number you prefered, add it to your own .env file and change your axios baseUrl (do not commit this)
+
 #### Dev Tools
 
 There are a few chrome extensions that make development a breeze.
