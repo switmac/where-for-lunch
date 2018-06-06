@@ -9,10 +9,11 @@ const Place = ({ place }) => {
       <div className={styles.box}>
         <div>{ place.address }</div>
         <div>{ place.phone }</div>
+        <div>{ place.categories && place.categories.join(', ') }</div>
         <div>{ place.price }</div>
         { place.rating &&
         <div className={styles.rating}>
-          <div className={styles.ratingScore}>{ place.rating }</div>
+          <div className={styles.ratingScore}>{ place.reviewCount } reviews</div>
           <div className={styles.stars}>
             <div className={styles.emptyStars}></div>
             <div className={styles.fullStars} style={{ width: `${place.rating / 5 * 100}%` }}></div>

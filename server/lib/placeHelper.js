@@ -23,6 +23,7 @@ export function fromSearchPlacesParams(params) {
     distance: params.distance,
     address: params.location.display_address.join(', '),
     categories: params.categories ? params.categories.map(c => c.title) : null,
+    reviewCount: params.review_count,
   };
   return result;
 }
