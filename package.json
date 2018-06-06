@@ -7,7 +7,8 @@
     "test": "jest test --config test/jestSetup.js",
     "test-tdd": "jest test --config test/jestSetup.js --watch",
     "jest-update": "jest --updateSnapshot --config test/jestSetup.js",
-    "webpack-dev": "webpack-dev-server --host 0.0.0.0 --progress --hot --config config/webpack.dev.js"
+    "webpack-dev": "webpack-dev-server --host 0.0.0.0 --progress --hot --config config/webpack.dev.js",
+    "dev": "npm run start & npm run webpack-dev"
   },
   "repository": {
     "type": "git",

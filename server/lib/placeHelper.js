@@ -26,14 +26,3 @@ export function fromSearchPlacesParams(params) {
   };
   return result;
 }
-
-export function fromPlaceDetailsParams(params) {
-  const result = {
-    address: params.formatted_address,
-    phone: params.formatted_phone_number,
-    name: params.name,
-    rating: params.rating,
-    price: params.price_level,
-  };
-  return result;
-}

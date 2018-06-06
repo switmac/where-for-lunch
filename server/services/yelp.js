@@ -6,12 +6,12 @@ const authedAxios = axios.create({
   baseURL: YELP_API_URL,
   headers: { Authorization: `Bearer ${process.env.YELP_API_KEY}` },
 });
-export function searchPlaces(params) {
-  console.log('PARAMS! ', params);
-  return authedAxios.get('/businesses/search', {
-    params,
-  }).then(({ data }) => data.businesses)
-    .catch((err) => {
-      console.log('!!! ', err);
-    });
+
+export async function searchPlaces(params) {
+  try {
+    const { data } = await authedAxios.get('/businesses/search', { params });
+    return data.businesses;
+  } catch (e) {
+    console.log('search failed!', e);
+  }
 }
