@@ -71,4 +71,5 @@ Integrate with Google Map.
 
 On place details page, grab the address then show it on google map. 
 
-
+## How to submit code
+Fork off this repo, commit your code changes to your own git account. For each task, they should stay in a separate branch with the task number. Commit to your forked master after you think one task is throughly finished. Then branch off the latest forked master to the next task.
