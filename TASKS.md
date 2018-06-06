@@ -19,7 +19,7 @@ How many tasks you've accomplished is NOT what we care about the most. Please do
 If you are stuck, set up a timeframe to allow yourself to resolve it first, if you can't work it out, please ask me.
 This is very normal, so you don't have feel pressured to solve everything yourself.
 
-If you have any questions or better proposals to the existing setup, you are more than welcome to talk to me.
+If you have any questions or better proposals to the existing setup, you are more than welcome talk to me or make a pr for it.
 
 There is no right or wrong about the approach you decided to take for certain tasks.
 As long as they make sense, i.e. you know exactly why you wrote this line, this method, why in this file, why you needed to use this library etc.
@@ -27,7 +27,7 @@ But keep in mind that your code should try to be clean, dry, scalable, readable,
 
 
 ## Initial stage:
-When you first time access this app, it should prompt you a location permission, click on yes, then wait for a few seconds (for navigator to grab your lat long), you can click on the green button to randomly generate you a food place based on the a certain radius around you.
+When you first time access this app, it should prompt you a location permission, click on yes, then wait for a few seconds (for navigator to grab your lat long), you can click on the green button to randomly generate you a food place based on a certain radius around you.
 ![on load](https://docs.google.com/uc?id=12ttwOeZRDUwD7vk7FiMk_OQE0U0X00gb)
 
 ![on button blick](https://docs.google.com/uc?id=1XgFa_Yu07Ca-V7Erv_BMajkRqHq09EHu)
@@ -72,4 +72,4 @@ Integrate with Google Map.
 On place details page, grab the address then show it on google map. 
 
 ## How to submit code
-Fork off this repo, commit your code changes to your own git account. For each task, they should stay in a separate branch with the task number. Commit to your forked master after you think one task is throughly finished. Then branch off the latest forked master to the next task.
+Fork off this repo, commit your code changes to your own git account. For each task, they should stay in a separate branch with the task number. Commit to your forked master after you think one task is thoroughly finished. Then branch off the latest forked master to the next task.
