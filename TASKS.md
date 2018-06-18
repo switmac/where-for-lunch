@@ -10,7 +10,8 @@ CSS skills is essential, but you don't have to make the app pixel perfect becaus
 - Refactor at an early stage whenever neccessary
 - The ability to struture your code in a logical way
 - You know about your code performance
-- Think throughly for any potential new libraries. A bad example will be to import a huge package and only because you need to use one simple method.
+- Think thoroughly for any potential new libraries. A bad example will be to import a huge package and only because you need to use one simple method.
+- It is important to have proper error handling for each tasks to some extent
 - Tests. We know TDD is hard to follow, but make sure you have your tests written for any files **with logics** in it.
 
 #### About the tasks:
