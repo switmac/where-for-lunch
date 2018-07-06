@@ -118,5 +118,8 @@ This repo uses es6 syntax. Please stick with it.
 #### CSS
 This repos uses CSS module and with PostCSS plugins. In general, you can define your style as global styles or component styles which stays within each component directory
 
+#### Trouble shooting
+Windows native cmd users, you may experience erros saying env is not recognised as internal command, in this case you may want to switch to a more advanced terminal
+
 ## Production mode:
 Not implemented yet
