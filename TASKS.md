@@ -63,7 +63,7 @@ Think about the difference between a component and container, restructure or ref
 ### Task 3
 Currently we don't support place details check.
 
-Please create a place details page which can be accessed by clicking on the generated place on homepage. 
+Please create a place details page which can be accessed by clicking on the generated place on homepage and reusing the existing component. 
 
 Data can be fetched from [here](https://www.yelp.com.au/developers/documentation/v3/business)
 
