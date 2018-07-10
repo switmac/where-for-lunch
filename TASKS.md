@@ -1,5 +1,5 @@
 ## Before you start
-The main purpose of this repo is to setup a code base for you guys to add additional features / fix bugs.
+The main purpose of this repo is to setup a code base for you to add additional features / fix bugs.
 Currently it is definitely not UI/design perfect. Our goal is to test your react/redux/node/test skills.
 CSS skills is essential, but you don't have to make the app pixel perfect because it will cost lots of time.
 
@@ -17,8 +17,7 @@ CSS skills is essential, but you don't have to make the app pixel perfect becaus
 #### About the tasks:
 How many tasks you've accomplished is NOT what we care about the most. Please do not rush.
 
-If you are stuck, set up a timeframe to allow yourself to resolve it first, if you can't work it out, please ask me.
-This is very normal, so you don't have feel pressured to solve everything yourself.
+If you are stuck, set up a timeframe to allow yourself to resolve it first, if you can't work it out, and there is absolutely nothing else you could do, then please ask me.
 
 If you have any questions or better proposals to the existing setup, you are more than welcome talk to me or make a pr for it.
 
