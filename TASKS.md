@@ -3,6 +3,8 @@ The main purpose of this repo is to setup a code base for you to add additional 
 Currently it is definitely not UI/design perfect. Our goal is to test your react/redux/node/test skills.
 CSS skills is essential, but you don't have to make the app pixel perfect because it will cost lots of time.
 
+We wanted to have a look at your JS skills so please do not use libraries like lodash or underscore.
+
 #### What we value the most is:
 - The ability (at least trying hard) to write clean code which is easy to read and test
 - Write scalable code, in simple ways, it means adding additional features will require less restructure and effort.
