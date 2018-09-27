@@ -4,6 +4,7 @@ export function toSearchPlacesParams(params) {
     latitude: params.latitude,
     longitude: params.longitude,
     radius: params.radius,
+    price: params.price,
     limit: 50,
     open_now: true,
   };
