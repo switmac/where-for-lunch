@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 export default class PriceRangeSelector extends PureComponent {
   static propTypes = {
     action: PropTypes.func,
-    theme: PropTypes.string,
     filter: PropTypes.object,
   };
 
