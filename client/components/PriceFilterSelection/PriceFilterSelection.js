@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PriceRangeSelector from 'components/PriceRangeSelector/PriceRangeSelector';
+import PriceFilterSelector from 'components/PriceFilterSelector/PriceFilterSelector';
 
 const PriceFilterSelection = ({ action, condition }) => {
   const { priceFilterList } = condition;
   const filters = priceFilterList.map((filter, index) => {
-    return <PriceRangeSelector key={index} action={ action } filter={ filter }>{filter.id} {filter.label} </PriceRangeSelector>;
+    return <PriceFilterSelector key={index} action={ action } filter={ filter }> {filter.label} </PriceFilterSelector>;
   });
 
   return (

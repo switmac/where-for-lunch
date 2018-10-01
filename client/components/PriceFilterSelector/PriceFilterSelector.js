@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-export default class PriceRangeSelector extends PureComponent {
+export default class PriceFilterSelector extends PureComponent {
   static propTypes = {
     action: PropTypes.func,
     filter: PropTypes.object,
