@@ -28,7 +28,6 @@ export function fromSearchPlacesParams(params) {
 }
 
 export function toGetPlaceParams(params) {
-  console.log(params);
   const result = {
     id: params.id,
   };
