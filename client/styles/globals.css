@@ -21,6 +21,11 @@
   align-items: center;
 }
 
+:global(.disabled) {
+  filter: grayscale(1);
+  cursor: not-allowed !important;
+}
+
 body {
   background: url("assets/index.jpg") no-repeat center center fixed;
   background-size: cover;

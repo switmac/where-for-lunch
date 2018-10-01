@@ -4,6 +4,7 @@ export function toSearchPlacesParams(params) {
     latitude: params.latitude,
     longitude: params.longitude,
     radius: params.radius,
+    price: params.price,
     limit: 50,
     open_now: true,
   };
@@ -22,6 +23,37 @@ export function fromSearchPlacesParams(params) {
     address: params.location.display_address.join(', '),
     categories: params.categories ? params.categories.map(c => c.title) : null,
     reviewCount: params.review_count,
+  };
+  return result;
+}
+
+export function toGetPlaceParams(params) {
+  const result = {
+    id: params.id,
+  };
+
+  return result;
+}
+
+export function fromPlaceDetailsParams(params) {
+  const result = {
+    rating: params.rating,
+    price: params.price,
+    phone: params.phone,
+    id: params.id,
+    name: params.name,
+    img: params.image_url,
+    distance: params.distance,
+    address: params.location.display_address.join(', '),
+    categories: params.categories ? params.categories.map(c => c.title) : null,
+    reviewCount: params.review_count,
+    photos: params.photos,
+    hours: params.hours ? params.hours.map((hour) => {
+      return {
+        hourType: hour.hour_type,
+        isOpenNow: hour.is_open_now,
+      };
+    }) : null,
   };
   return result;
 }

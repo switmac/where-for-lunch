@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Jest, render PriceFilterSelector correctly 1`] = `
+<div>
+  <input
+    onClick={[Function]}
+    type="checkbox"
+  />
+  $
+</div>
+`;
