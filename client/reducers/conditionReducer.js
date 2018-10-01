@@ -11,7 +11,10 @@ const conditionReducer = handleActions(
     },
     [actionTypes.SET_LAT_LNG](state, action) {
       const { latitude, longitude } = action.payload;
-      return { ...state, latitude, longitude };
+      return { ...state, getLatLangInProgress: false, latitude, longitude };
+    },
+    [actionTypes.GET_LAT_LNG](state, action) {
+      return { ...state, getLatLangInProgress: true, ...action.payload };
     },
   },
   initialState,

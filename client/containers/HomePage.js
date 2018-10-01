@@ -16,6 +16,7 @@ class HomePage extends Component {
   handleOnConditionChange = (value) => {
     this.props.setRadius(value);
   }
+
   render() {
     const { condition, place } = this.props;
     return (
@@ -23,7 +24,7 @@ class HomePage extends Component {
         <Place place={place} />
         <div className="searchWrapper">
           <Condition condition={condition} action={this.handleOnConditionChange}/>
-          <Button onClick={this.handleOnClick} theme="homepageClick" />
+          <Button isDisabled={condition.getLatLangInProgress} onClick={this.handleOnClick} theme="homepageClick" />
         </div>
       </div>
     );
@@ -47,6 +48,7 @@ HomePage.propTypes = {
   fetchPlaces: PropTypes.func,
   setRadius: PropTypes.func,
 };
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
