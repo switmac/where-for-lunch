@@ -22,6 +22,7 @@ exports[`With Jest snapshot, Place component renders rating section when present
       <div
         className="ratingScore"
       >
+        10
          reviews
       </div>
       <div
