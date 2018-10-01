@@ -10,6 +10,7 @@ import rootReducer from 'reducers';
 import sagas from 'sagas';
 import App from 'containers/App';
 import HomePage from 'containers/HomePage';
+import PlacePage from 'containers/PlacePage';
 import { fetchLatLng } from 'lib/navigatorHelper';
 import 'index.css';
 
@@ -31,6 +32,7 @@ render(
       <Router history={history}>
         <Switch>
           <Route path="/" exact component={ HomePage } />
+          <Route path="/place/" exact component={ PlacePage } />
         </Switch>
       </Router>
     </App>
