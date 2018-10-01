@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Jest snapshot, render a disabled button 1`] = `
+<button
+  className="root undefined disabled"
+  onClick={null}
+>
+  Test
+</button>
+`;
