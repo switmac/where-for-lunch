@@ -13,7 +13,7 @@ test('With Enzyme, Place component not render rating section when no rating pass
 });
 
 test('With Jest snapshot, Place component renders rating section when present', () => {
-  const place = { hehe: 'haha', rating: 3.5 };
+  const place = { hehe: 'haha', rating: 3.5, reviewCount: 10 };
   const placeComponent = renderer
     .create(<Place place={place} />)
     .toJSON();
